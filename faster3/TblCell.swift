@@ -9,10 +9,11 @@
 import UIKit
 
 class TblCell: UITableViewCell {
-
-    @IBOutlet weak var imgCarName: UIImageView!
     
-    @IBOutlet weak var lblCarName: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSub: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var imgIcon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Provas-->
         <scene sceneID="kRN-fu-Mjr">
             <objects>
                 <tableViewController id="Ac7-px-yHc" customClass="FirstViewController" customModule="faster3" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="S8V-tE-zhx">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="S8V-tE-zhx">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S8V-tE-zhx" id="umh-Bx-XGj">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -25,12 +25,12 @@
                             <outlet property="delegate" destination="Ac7-px-yHc" id="Z0O-dz-KLt"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="PyT-ns-ANh"/>
+                    <navigationItem key="navigationItem" title="Provas" id="871-2T-hd0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCA-gA-bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="-227"/>
+            <point key="canvasLocation" x="1028" y="-227"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="389"/>
+            <point key="canvasLocation" x="1028" y="389"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -87,13 +87,32 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ac7-px-yHc" kind="relationship" relationship="viewControllers" id="Hrl-KK-ndR"/>
+                        <segue destination="nCH-Wt-0iF" kind="relationship" relationship="viewControllers" id="Hrl-KK-ndR"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p9p-0N-34I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nCH-Wt-0iF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="PyT-ns-ANh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tEc-69-7YL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ac7-px-yHc" kind="relationship" relationship="rootViewController" id="jLh-uY-n3v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDk-xs-RaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="-227"/>
         </scene>
     </scenes>
 </document>

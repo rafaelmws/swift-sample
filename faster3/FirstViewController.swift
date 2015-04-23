@@ -33,8 +33,18 @@ class FirstViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier(<#identifier: String#>)
-        }
+        let cell:TblCell = self.tableView.dequeueReusableCellWithIdentifier("provaCell", forIndexPath: indexPath) as! TblCell
+
+        var prova:Prova
+        
+        prova = provas[indexPath.row]
+        
+        cell.lblTitle.text = prova.name
+        cell.lblSub.text = prova.local
+        cell.lblDate.text = prova.data
+        
+        return cell
+    }
 
 
 }
