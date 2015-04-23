@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53375F591AE8F1700088E24B /* vwTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53375F581AE8F1700088E24B /* vwTblCell.xib */; };
+		53375F5B1AE8F1BF0088E24B /* TblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53375F5A1AE8F1BF0088E24B /* TblCell.swift */; };
+		53375F5D1AE8F3CB0088E24B /* prova.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53375F5C1AE8F3CB0088E24B /* prova.swift */; };
 		536A7FC81AE7237D005ED917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536A7FC71AE7237D005ED917 /* AppDelegate.swift */; };
 		536A7FCA1AE7237D005ED917 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536A7FC91AE7237D005ED917 /* FirstViewController.swift */; };
 		536A7FCC1AE7237D005ED917 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536A7FCB1AE7237D005ED917 /* SecondViewController.swift */; };
@@ -27,10 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53375F581AE8F1700088E24B /* vwTblCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vwTblCell.xib; sourceTree = "<group>"; };
+		53375F5A1AE8F1BF0088E24B /* TblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblCell.swift; sourceTree = "<group>"; };
+		53375F5C1AE8F3CB0088E24B /* prova.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prova.swift; sourceTree = "<group>"; };
 		536A7FC21AE7237D005ED917 /* faster3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faster3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536A7FC61AE7237D005ED917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		536A7FC71AE7237D005ED917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		536A7FC91AE7237D005ED917 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		536A7FC91AE7237D005ED917 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		536A7FCB1AE7237D005ED917 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		536A7FCE1AE7237D005ED917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		536A7FD01AE7237D005ED917 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				536A7FD01AE7237D005ED917 /* Images.xcassets */,
 				536A7FD21AE7237D005ED917 /* LaunchScreen.xib */,
 				536A7FC51AE7237D005ED917 /* Supporting Files */,
+				53375F581AE8F1700088E24B /* vwTblCell.xib */,
+				53375F5A1AE8F1BF0088E24B /* TblCell.swift */,
+				53375F5C1AE8F3CB0088E24B /* prova.swift */,
 			);
 			path = faster3;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536A7FCF1AE7237D005ED917 /* Main.storyboard in Resources */,
+				53375F591AE8F1700088E24B /* vwTblCell.xib in Resources */,
 				536A7FD41AE7237D005ED917 /* LaunchScreen.xib in Resources */,
 				536A7FD11AE7237D005ED917 /* Images.xcassets in Resources */,
 			);
@@ -217,6 +227,8 @@
 			files = (
 				536A7FCC1AE7237D005ED917 /* SecondViewController.swift in Sources */,
 				536A7FC81AE7237D005ED917 /* AppDelegate.swift in Sources */,
+				53375F5D1AE8F3CB0088E24B /* prova.swift in Sources */,
+				53375F5B1AE8F1BF0088E24B /* TblCell.swift in Sources */,
 				536A7FCA1AE7237D005ED917 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +427,7 @@
 				536A7FE51AE7237D005ED917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		536A7FE61AE7237D005ED917 /* Build configuration list for PBXNativeTarget "faster3Tests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +436,7 @@
 				536A7FE81AE7237D005ED917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
